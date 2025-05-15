@@ -7,5 +7,10 @@ public class NestedEx2 {
         // 피라미드
 
         // * 개수가 i에 의해 결정됨
+
+        // TODO 추후 다시 할 것
+
+        int rows = 5;
+
     }
 }
