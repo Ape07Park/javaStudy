@@ -11,13 +11,13 @@ public class Casting04 {
         int div1 = 3 / 2;
         System.out.println(div1); // 1
 
-        double div2 = 3 / 2;
+        double div2 = 3 / 2; // 대입 전 자동 형변환 발생
         System.out.println(div2); // 1.0
 
-        double div3 = 3.0 / 2;
+        double div3 = 3.0 / 2; // **계산 전 2를 double로 casting 후 나누기 연산
         System.out.println(div3); // 1.5
 
-        double div4 = (double) 3 / 2;
+        double div4 = (double) 3 / 2; // 3을 double로 캐스팅 후 나누기 연산
         System.out.println(div4); // 1.5
 
         int a = 3;
