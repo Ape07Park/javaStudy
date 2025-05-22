@@ -10,14 +10,17 @@ public class ScannerWhileEx3 {
 
         int sum = 0;
         int inputCount = 0;
+        int input = 0;
 
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
+        System.out.println("숫자 입력하시오. 0을 입력하면 중단");
+
+       /* while (true) {
 
             int input = scanner.nextInt();
 
-            if(input == 0){
+            if (input == 0) {
                 System.out.println("end");
                 break;
             }
@@ -25,14 +28,17 @@ public class ScannerWhileEx3 {
             sum += input;
             inputCount += 1;
 
+        }*/
+
+        while ((input = scanner.nextInt()) != 0){
+            sum += input;
+            inputCount += 1;
         }
 
         System.out.println(sum);
-        System.out.println((double) sum / (double) inputCount);
-        
-        
-        
-        
+        System.out.println((double) sum / inputCount);
+
+
         // list를 사용해 푼 것
        /* List<Integer> arr = new ArrayList<>();
         
