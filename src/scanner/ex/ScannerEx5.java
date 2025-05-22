@@ -28,6 +28,8 @@ public class ScannerEx5 {
 
             // 사이 숫자 출력
             // 두 숫자 사이의 모든 정수:2,3,4
+
+            // TODO for문으로도 해보기
             while (smaller <= bigger) {
 
                 if (smaller == bigger) {
@@ -58,7 +60,7 @@ public class ScannerEx5 {
         arr[0] = num1;
         arr[1] = num2;
 
-        System.out.println("num1 : " + arr[0] + " num2 : " + arr[1]);
+        System.out.println("checkNum : "+"num1 : " + arr[0] + " num2 : " + arr[1]);
 
         return arr;
     }
