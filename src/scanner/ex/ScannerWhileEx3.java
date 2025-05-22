@@ -9,13 +9,26 @@ public class ScannerWhileEx3 {
     public static void main(String[] args) {
 
         int sum = 0;
-
-        double avg = 0;
+        int inputCount = 0;
 
         Scanner scanner = new Scanner(System.in);
 
+        while (true) {
 
-        
+            int input = scanner.nextInt();
+
+            if(input == 0){
+                System.out.println("end");
+                break;
+            }
+
+            sum += input;
+            inputCount += 1;
+
+        }
+
+        System.out.println(sum);
+        System.out.println((double) sum / (double) inputCount);
         
         
         
