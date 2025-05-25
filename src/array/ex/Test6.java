@@ -3,7 +3,7 @@ package array.ex;
 import java.util.Scanner;
 
 public class Test6 {
-
+//     TODO 문제 풀기
     public static void main(String[] args) {
 
         int max = 0;

@@ -20,7 +20,7 @@ public class Test2 {
 
         for (int i : arr) {
 
-            if (i == 5) {
+            if (i == arr.length) {
                 System.out.print(i);
             } else {
                 System.out.print(i + ", ");
