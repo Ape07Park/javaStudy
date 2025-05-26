@@ -3,11 +3,8 @@ package array.ex;
 import java.util.Scanner;
 
 public class Test6 {
-//     TODO 문제 풀기
-    public static void main(String[] args) {
 
-        int max = 0;
-        int min = 0;
+    public static void main(String[] args) {
 
         int[] arr;
         int input = 0;
@@ -25,10 +22,22 @@ public class Test6 {
             arr[i] = scanner.nextInt();
         }
 
-        // 버블 정렬
+        int max = arr[0];
+        int min = arr[0];
 
-        // 반복
-        // max = getMax(a,b)
+        // 큰 거 찾기
+        for (int i = 1; i < arr.length; i++) {
+
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+
+            if (min > arr[i]) {
+                min = arr[i];
+            }
+
+
+        }
 
 
         scanner.close();
@@ -37,14 +46,5 @@ public class Test6 {
         System.out.println("가장 작은 수: " + min);
 
 
-    }
-
-    public static int getMax(int a, int b) {
-
-        if (a > b) {
-            return a;
-        }
-
-        return b;
     }
 }
