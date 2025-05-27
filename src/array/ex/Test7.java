@@ -8,6 +8,7 @@ public class Test7 {
 
         int[][] arr = new int[4][3];
         Scanner scanner = new Scanner(System.in);
+//        String[] subjects = {"국어", "영어", "수학"};
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println(i + 1 + "번 학생의 성적을 입력하시오");
@@ -23,6 +24,9 @@ public class Test7 {
                     System.out.print("수학 점수 :");
                     arr[i][j] = scanner.nextInt();
                 }
+
+//                System.out.println(subjects[j] + " 점수를 입력하시오: ");
+//                arr[i][j] = scanner.nextInt();
 
             }
         }

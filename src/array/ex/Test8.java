@@ -6,67 +6,54 @@ public class Test8 {
 
     public static void main(String[] args) {
 
-        int totalPrice = 0;
-
-        String[] productNames = new String[10];
-        int [] productPrices = new int[10];
-        int  productCount = 0;
-
+        int studentCount = 0;
+        
         Scanner scanner = new Scanner(System.in);
+        String[] subjects = {"국어", "영어", "수학"};
 
+        System.out.print("학생 수를 입력 :");
 
-        while (true) {
+        studentCount = scanner.nextInt();
 
-            System.out.println("1은 물건 등록, 2는 물건 목록, 3은 종료");
+        int[][] arr = new int[studentCount][3];
 
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(i + 1 + "번 학생의 성적을 입력하시오");
+            for (int j = 0; j < arr[i].length; j++) {
 
-            System.out.print("메뉴 선택: ");
-            int input = scanner.nextInt();
+//                if (j == 0) {
+//                    System.out.print("국어 점수 :");
+//                    arr[i][j] = scanner.nextInt();
+//                } else if (j == 1) {
+//                    System.out.print("영어 점수 :");
+//                    arr[i][j] = scanner.nextInt();
+//                } else {
+//                    System.out.print("수학 점수 :");
+//                    arr[i][j] = scanner.nextInt();
+//                }
 
-            if (input == 3) {
-                System.out.println("end");
-                break;
-            } else if (input == 2) {
-                // 물건 목록 출력
-                System.out.println("물건 목록 출력");
+                System.out.println(subjects[j] + " 점수를 입력하시오: ");
+                arr[i][j] = scanner.nextInt();
 
-                for (int i = 0; i < productCount; i++) {
-                    System.out.println(productNames[i] + " " + productPrices[i]);
-                }
-
-            } else if (input == 1) {
-
-                if (productCount >= 10) {
-                    System.out.println("물건 등록 불가");
-                    continue;
-                }
-
-                scanner.nextLine();
-
-                System.out.println("물건 등록을 시작");
-
-                System.out.print("물건 명 입력 :");
-
-                String productName = scanner.nextLine();
-
-                System.out.println();
-
-                productNames[productCount] = productName;
-
-                System.out.print("물건 가격을 입력 :");
-
-                int productPrice = scanner.nextInt();
-
-                productPrices[productCount] = productPrice;
-
-                productCount++;
-
-            } else {
-                System.out.println("올바른 숫자를 입력하시오");
             }
-
         }
 
+        scanner.close();
+
+        System.out.println();
+
+        for (int i = 0; i < arr.length; i++) {
+            int sum = 0;
+            double avg = 0;
+            for (int j = 0; j < arr[i].length; j++) {
+
+                sum = sum + arr[i][j];
+                avg = (double) sum / (arr[i].length);
+            }
+            System.out.println(i + 1 + "번 학생의 성적 합 :" + sum + " 평균 :" + avg);
+
+            System.out.println();
+        }
 
     }
 }
