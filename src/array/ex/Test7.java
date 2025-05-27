@@ -7,28 +7,42 @@ public class Test7 {
     public static void main(String[] args) {
 
         int[][] arr = new int[4][3];
-//        int input = 0;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("숫자 입력 시작");
-
         for (int i = 0; i < arr.length; i++) {
+            System.out.println(i + 1 + "번 학생의 성적을 입력하시오");
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.println(i + 1 + "번 학생의 성적을 입력하시오");
-                arr[i][j] = scanner.nextInt();
+
+                if (j == 0) {
+                    System.out.print("국어 점수 :");
+                    arr[i][j] = scanner.nextInt();
+                } else if (j == 1) {
+                    System.out.print("영어 점수 :");
+                    arr[i][j] = scanner.nextInt();
+                } else {
+                    System.out.print("수학 점수 :");
+                    arr[i][j] = scanner.nextInt();
+                }
+
             }
         }
 
         scanner.close();
 
+        System.out.println();
+
         for (int i = 0; i < arr.length; i++) {
-            System.out.println("국어 점수 :" + arr[i]);
-            System.out.println("영어 점수 :" + arr[i]);
-            System.out.println("수학 점수 :" + arr[i]);
+            int sum = 0;
+            double avg = 0;
+            for (int j = 0; j < arr[i].length; j++) {
+
+                sum = sum + arr[i][j];
+                avg = (double) sum / (arr[i].length);
+            }
+            System.out.println(i + 1 + "번 학생의 성적 :" + sum + "평균 :" + avg);
 
             System.out.println();
         }
-
 
     }
 }
