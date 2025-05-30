@@ -1,6 +1,6 @@
-package chepter2.class2;
+package chepter2.ref;
 
-public class Test {
+public class VarChange1 {
 
     public static void main(String[] args) {
         System.out.println("Hello World");
