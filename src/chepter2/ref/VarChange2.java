@@ -4,23 +4,30 @@ public class VarChange2 {
 
     public static void main(String[] args) {
 
-        int a = 10;
-        int b = a;
+       Data dataA = new Data();
+       dataA.value = 10;
 
-        System.out.println(a);
-        System.out.println(b);
+       // 참조값을 복사해서 넣음
+       Data dataB = dataA;
 
-        // a 변경
-        a = 20;
+        System.out.println("dataA 참조값= " + dataA);
+        System.out.println("dataB 참조값= " + dataB);
 
-        System.out.println("변경 a = 20");
-        System.out.println(a);
-        System.out.println(b);
+        System.out.println("dataA.value = " + dataA.value);
+        System.out.println("dataB.value = " + dataB.value);
 
-        // b 변경
-        b = 30;
-        System.out.println("변경 b = 30");
-        System.out.println(a);
-        System.out.println(b);
+        // dataA 변경
+        dataA.value = 20;
+        System.out.println("변경 dataA.value = 20");
+
+        System.out.println("dataA.value = " + dataA.value);
+        System.out.println("dataB.value = " + dataB.value);
+
+        // dataB 변경
+        dataB.value = 30;
+        System.out.println("변경 dataB.value = 30");
+
+        System.out.println("dataA.value = " + dataA.value);
+        System.out.println("dataB.value = " + dataB.value);
     }
 }
