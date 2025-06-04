@@ -1,6 +1,6 @@
 package chepter2.oop1.ex;
 
-public class RectangleObjMain {
+public class RectangleOopMain {
 
     public static void main(String[] args) {
 
@@ -19,7 +19,6 @@ public class RectangleObjMain {
 
         rectangle.square = rectangle.isSquare();
         System.out.println("정사각형 여부: " + rectangle.square );
-
 
     }
 }

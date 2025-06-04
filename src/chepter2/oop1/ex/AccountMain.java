@@ -14,9 +14,7 @@ public class AccountMain {
         // 2000원 출금
         account.withdraw(2000);
 
-
-
-
+        System.out.println("Balance: " +account.balance);
     }
 
 

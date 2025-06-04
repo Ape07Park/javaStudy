@@ -14,7 +14,6 @@ public class Account {
 
         if (balance < amount) {
             System.out.println("Insufficient balance");
-            System.out.println("Balance: " + balance);
             return;
         }
 

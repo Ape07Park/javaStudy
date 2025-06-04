@@ -13,9 +13,6 @@ public class Rectangle {
     boolean square;
 
 
-
-
-
     int calculateArea() {
         area = width * height;
         return area;
