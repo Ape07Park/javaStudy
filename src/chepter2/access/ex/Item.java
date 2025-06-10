@@ -24,6 +24,13 @@ public class Item {
         return count;
     }
 
+    // 자기 데이터를 자기가 사용해서 특정 기능(메소드)을 만드는 것이 객체지향적임
+    // 속성과 기능이 근처에 있는 것을 쓰는 것이 좋은 객체지향적 코드
+    // 이유는 이 파일만 수정하면 돼서.
+    public int getTotalPrice() {
+        return price * count;
+    }
+
     /*
     Item 클래스에 getTotalPrice() 메서드를 만드는 것이 더 캡슐화 원칙을 잘 지키고, 객체지향적으로 더 적절
 
