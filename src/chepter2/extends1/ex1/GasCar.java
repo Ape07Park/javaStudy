@@ -1,4 +1,4 @@
-package chepter2.extends1;
+package chepter2.extends1.ex1;
 
 public class GasCar {
 
