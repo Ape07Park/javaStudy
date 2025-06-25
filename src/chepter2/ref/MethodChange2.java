@@ -12,7 +12,7 @@ public class MethodChange2 {
 
 		System.out.println("메소드 호출 전 : a = " + a);
 
-		System.out.println("기본형 종료");
+		System.out.println("--------------- 기본형 종료 ---------------");
 
 		Data dataA = new Data();
 		dataA.value = 10;
