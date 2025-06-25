@@ -5,4 +5,6 @@ public class B {
     public int getX() {
         return x * 2;
     }
+
+
 }
