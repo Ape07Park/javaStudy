@@ -2,6 +2,7 @@ package chepter2.oop1;
 
 /**
  * 메소드 추출
+ * 코드가 간결하긴 하나 데이터와 메서드가 분리되어 있다
  */
 public class MusicPlayerMain3 {
 
