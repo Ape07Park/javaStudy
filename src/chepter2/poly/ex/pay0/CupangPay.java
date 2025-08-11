@@ -1,0 +1,11 @@
+package chepter2.poly.ex.pay0;
+
+public class CupangPay implements Pay{
+
+	@Override
+	public boolean pay(int amount) {
+		System.out.println("쿠팡페이 시스템과 연결합니다.");
+		System.out.println(amount + "원 결제를 시도합니다.");
+		return true;
+	}
+}

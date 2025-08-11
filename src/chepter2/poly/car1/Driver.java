@@ -1,5 +1,9 @@
 package chepter2.poly.car1;
 
+/**
+ * 자동차를 사용하는 클라이언트에 해당한다
+ * 따라서 Driver 코드는 변경이 없음
+ */
 public class Driver {
 
 	private Car car;
