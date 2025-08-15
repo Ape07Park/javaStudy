@@ -8,7 +8,7 @@ public abstract class AbstractPayLogic {
 
 		switch (option) {
 			case "kakao" -> {
-				KakaoPay kakaoPay = new KakaoPay();
+				Pay kakaoPay = new KakaoPay();
 				return kakaoPay.pay(amount);
 			}
 			case "naver" -> {
@@ -17,13 +17,13 @@ public abstract class AbstractPayLogic {
 
 			}
 			case "toss" -> {
-				TossPay tossPay = new TossPay();
+				Pay tossPay = new TossPay();
 				return tossPay.pay(amount);
 
 			}
 
 			case "cupang" -> {
-				CupangPay cupangPay = new CupangPay();
+				Pay cupangPay = new CupangPay();
 				return cupangPay.pay(amount);
 
 			}
