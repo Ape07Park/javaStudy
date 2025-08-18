@@ -12,7 +12,7 @@ public abstract class AbstractPayLogic {
 				return kakaoPay.pay(amount);
 			}
 			case "naver" -> {
-				NaverPay naverPay = new NaverPay();
+				Pay naverPay = new NaverPay();
 				return naverPay.pay(amount);
 
 			}
