@@ -1,4 +1,4 @@
-package chepter3.object;
+package chepter3.lang.object;
 
 public class ObjectMain {
 
