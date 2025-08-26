@@ -8,7 +8,7 @@ public class FinalRefMain {
         final Data data = new Data();
 //        data = new Data();
 
-        data.value = 10; // 주소값을 담은 data-참조형 변수-가 final인 거지 Data 필드가 final인 것이 아님
+        data.value = 10; // 주소값을 담은 data-참조형 변수-가 final인 거지 Data 필드인 value가 final인 것이 아님
         System.out.println(data.value);
         data.value = 20;
         System.out.println(data.value);
