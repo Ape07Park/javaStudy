@@ -14,11 +14,13 @@ public class FinalLocalMain {
 //        dat2 = 20; // 컴파일 오류
 
         method(10); // 10으로 param 고정됨
-    }
+
+		// 다른 파일에 있는 상수를 불러옴
+		int testValue = TestFinal.TEST_VALUE;
+	}
 
     static void method(final int param) {
 //        param = 20;  // param의 값이 이미 10으로 고정됨
     }
-
 
 }
