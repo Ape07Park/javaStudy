@@ -1,10 +1,11 @@
-package chepter3.lang.object.immutable;
+package chepter3.lang.object.immutable.address;
 
-public class RefMain1_1 {
+public class RefMain1_2 {
 
 	public static void main(String[] args) {
+		// 주소값이 서로 다름
 		Address a = new Address("서울");
-		Address b = a;
+		Address b = new  Address("서울");
 
 		System.out.println("a = " + a);
 		System.out.println("b = " + b);

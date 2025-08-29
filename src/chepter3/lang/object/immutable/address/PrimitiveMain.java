@@ -1,4 +1,4 @@
-package chepter3.lang.object.immutable;
+package chepter3.lang.object.immutable.address;
 
 public class PrimitiveMain {
 
