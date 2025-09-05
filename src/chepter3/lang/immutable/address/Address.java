@@ -1,4 +1,4 @@
-package chepter3.lang.object.immutable.address;
+package chepter3.lang.immutable.address;
 
 public class Address {
 

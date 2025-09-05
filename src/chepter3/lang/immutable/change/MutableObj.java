@@ -1,4 +1,4 @@
-package chepter3.lang.object.immutable.change;
+package chepter3.lang.immutable.change;
 
 public class MutableObj {
 

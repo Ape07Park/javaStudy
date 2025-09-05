@@ -1,11 +1,11 @@
-package chepter3.lang.object.immutable.address;
+package chepter3.lang.immutable.address;
 
-public class MemberV1 {
+public class MemberV2 {
 
 	private String name;
-	private Address address;
+	private ImmutableAddress address;
 
-	public MemberV1(String name, Address address) {
+	public MemberV2(String name, ImmutableAddress address) {
 		this.name = name;
 		this.address = address;
 	}
@@ -18,11 +18,11 @@ public class MemberV1 {
 		this.name = name;
 	}
 
-	public void setAddress(Address address) {
+	public void setAddress(ImmutableAddress address) {
 		this.address = address;
 	}
 
-	public Address getAddress() {
+	public ImmutableAddress getAddress() {
 		return address;
 	}
 

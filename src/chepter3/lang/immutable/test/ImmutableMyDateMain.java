@@ -1,4 +1,4 @@
-package chepter3.lang.object.immutable.test;
+package chepter3.lang.immutable.test;
 
 public class ImmutableMyDateMain {
 
