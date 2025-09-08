@@ -8,6 +8,8 @@ public class Ex4 {
 
 	public static void main(String[] args) {
 		Frame f = new Frame();
+
+		// 매개 변수를 내부 클래스로 생성해서 넣기
 		f.addWindowListener(new WindowAdapter() {
 
 			public void windowClosing(WindowEvent e) {
