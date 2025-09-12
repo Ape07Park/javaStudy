@@ -5,10 +5,20 @@ public class StringInfoMain {
 	public static void main(String[] args) {
 		String str = "Hello World";
 		System.out.println("문자열의 길이: " + str.length());
+
+		// 길이 0인지
 		System.out.println("문자열이 비어 있는지: " + str.isEmpty());
+
+
 		// since 11
+		// 길이가 0이거나 공백인지
 		System.out.println("문자열이 비어 있거나 공백인지1: " + str.isBlank());
+
+
+
 		System.out.println("문자열이 비어 있거나 공백인지2: " + "  ".isBlank());
+
+		//
 		System.out.println("문자열이 비어 있거나 공백인지3: " + "".isBlank());
 
 		char c =str.charAt(7);
