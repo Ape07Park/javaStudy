@@ -12,6 +12,10 @@ public class StringSplitJoinMain {
 		}
 
 		String joinStr = "";
+
 		// join()
+		String[] array = {"Apple", "Banana", "Orange"};
+		joinStr = String.join(",", array);
+		System.out.println(joinStr);
 	}
 }
