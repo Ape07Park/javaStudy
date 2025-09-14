@@ -1,5 +1,7 @@
 package chepter3.lang.string.method;
 
+import java.util.Arrays;
+
 public class StringSplitJoinMain {
 
 	public static void main(String[] args) {
@@ -7,15 +9,21 @@ public class StringSplitJoinMain {
 
 		// split()
 		String[] splitStr = str.split(",");
+
+		System.out.println(Arrays.toString(splitStr)); // [Apple, Banana, Orange]
+
 		for (String s : splitStr) {
 			System.out.println(s);
 		}
 
-		String joinStr = "";
-
 		// join()
-		String[] array = {"Apple", "Banana", "Orange"};
-		joinStr = String.join(",", array);
-		System.out.println(joinStr);
+		String joinStr = String.join("-", "A", "B", "C");
+		System.out.println("연결된 문자열: " + joinStr);
+
+		// 문자열 배열 연결
+		String result = String.join("-", splitStr);
+		System.out.println(result);
+
+
 	}
 }
