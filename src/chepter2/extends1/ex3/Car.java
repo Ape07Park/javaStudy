@@ -6,7 +6,7 @@ public class Car {
 		System.out.println("차를 이동합니다");
 	}
 
-	// 기능 추가
+
 	public void openDoor() {
 		System.out.println("문 열기");
 	}
