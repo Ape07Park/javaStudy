@@ -12,7 +12,7 @@ public class CastingMain1 {
 
 		// 다운 캐스팅: 부모 -> 자식 으로 타입 다운
 		Child child = (Child) poly;
-		child.childMethod();
+		child.childMethod(); // Child.childMethod
 
 
 

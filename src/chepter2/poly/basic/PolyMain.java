@@ -8,18 +8,18 @@ public class PolyMain {
 		// 부모 변수가 부모 인스턴스 참조
 		System.out.println("Parent -> Parent");
 		Parent parent = new Parent();
-		parent.parentMethod();
+		parent.parentMethod(); // Parent.parentMethod
 
 		// 자식 변수가 자식 인스턴스 참조
 		System.out.println("Child -> Child");
 		Child child = new Child();
-		child.parentMethod();
-		child.childMethod();
+		child.parentMethod(); // Parent.parentMethod
+		child.childMethod(); // Child.childMethod
 
 		// 부모 변수가 자식 인스턴스 참조(다형적 참조)
 		System.out.println("Parent -> Child");
-		Parent poly = new Child();
-		poly.parentMethod();
+		Parent poly = (Parent) new Child(); //  (Parent) 불 꺼짐 즉 생략 O
+		poly.parentMethod(); // Parent.parentMethod
 
 		// Child child1 = new Parent(); // 자식은 부모를 못 담음
 
