@@ -11,8 +11,10 @@ public class TryWithResourceEx {
 		} catch (CloseableResource.CloseException e) {
 			e.printStackTrace();
 		}
+		
 		System.out.println();
 
+		// 예외가 2개가 동시에 발생 불가 따라서 실제 발생한 WorkException을 예외로 내보내고 다음에 발생한 예외-CloseException-는 Suppressed(엑제된) 예외로 들어감
 		try (CloseableResource cr = new CloseableResource()){
 			cr.exceptionWork(true); // 예외 발생 O
 		} catch (CloseableResource.WorkException e) {
@@ -20,10 +22,7 @@ public class TryWithResourceEx {
 		} catch (CloseableResource.CloseException e) {
 			e.printStackTrace();
 		}
-
 	}
-
-
 }
 
 class CloseableResource implements AutoCloseable {
