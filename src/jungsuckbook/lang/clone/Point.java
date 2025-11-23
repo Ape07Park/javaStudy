@@ -1,5 +1,8 @@
 package jungsuckbook.lang.clone;
 
+/**
+ * clone() 사용할려면 Cloneable 구현 필수
+ */
 public class Point implements Cloneable {
 	int x, y;
 
