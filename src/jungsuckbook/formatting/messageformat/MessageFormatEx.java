@@ -19,7 +19,7 @@ public class MessageFormatEx {
 
 		String msg = "INSERT INTO " + TABLE_NAME + " VALUES (''{0}'', ''{1}'', ''{2}'', ''{3}'');";
 
-		String[][] arr = {{"user04", "1111", "이자바", "b86936c7-5111-4d89-9351-e39d822ca1bc"}};
+		Object[] arr = {"user04", "1111", "이자바", "b86936c7-5111-4d89-9351-e39d822ca1bc"};
 
 		final String url = "";
 		final String user = "";
@@ -27,9 +27,11 @@ public class MessageFormatEx {
 
 		try (Connection conn = DriverManager.getConnection(url, user, password)) {
 
-			String sql = MessageFormat.format(msg, (Object)arr[0]);
+			String sql = MessageFormat.format(msg, arr);
 
 			System.out.println(sql);
+
+			conn.prepareStatement(sql).executeUpdate();
 
 		} catch (SQLException e) {
 			e.printStackTrace();
