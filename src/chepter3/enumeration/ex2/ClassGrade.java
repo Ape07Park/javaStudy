@@ -6,4 +6,7 @@ public class ClassGrade {
 	public static final ClassGrade GOLD = new ClassGrade();
 	public static final ClassGrade DIAMOND = new ClassGrade();
 
+	// 외부에서 생성자 사용 차단
+	private ClassGrade() {}
+
 }
