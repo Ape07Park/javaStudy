@@ -15,12 +15,13 @@ public class TestAdjusters {
 
 		// 코드 작성
 
-		LocalDateTime date = LocalDateTime.of(year, month, 1, 0, 0, 0);
+		LocalDate date = LocalDate.of(year, month, 1);
+		DayOfWeek firstDayOfWeek = date.getDayOfWeek();
+		DayOfWeek lastDayOfWeek = date.with(TemporalAdjusters.lastDayOfMonth()).getDayOfWeek();
 
-
-		// TODO 요일 추출 필요
-		System.out.println(date.with(TemporalAdjusters.firstDayOfMonth()));
-		System.out.println(date.with(TemporalAdjusters.lastDayOfMonth()));
+		System.out.println(date.getDayOfWeek());
+		System.out.println(firstDayOfWeek);
+		System.out.println(lastDayOfWeek);
 
 
 	}
