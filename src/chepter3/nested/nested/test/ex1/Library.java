@@ -4,12 +4,12 @@ public class Library {
 
 	private int max;
 
-	private Book[] books = new Book[max];
+	private Book[] books;
 
 	private int count = 0;
 
-
 	public Library(int max) {
+		books = new Book[max];
 		this.max = max;
 	}
 
@@ -31,10 +31,16 @@ public class Library {
 
 	public void showBooks() {
 
+		for (Book book : books) {
+			if (book != null) {
+				System.out.println(book.title + " " + book.author);
+			}
+		}
+
 
 	}
 
-	class Book {
+	private static class Book {
 
 		private String title;
 
