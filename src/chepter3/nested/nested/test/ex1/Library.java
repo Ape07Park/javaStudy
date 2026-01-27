@@ -40,6 +40,9 @@ public class Library {
 
 	}
 
+	// 외부로 노출되면 안되기에 그리고 Library에 속한 것을 사용 X
+	// 따라서 private static 달음
+	// 만일 Library의 것을 사용 O -> 내부 클래스로
 	private static class Book {
 
 		private String title;
