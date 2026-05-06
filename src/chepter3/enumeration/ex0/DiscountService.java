@@ -1,0 +1,23 @@
+package chepter3.enumeration.ex0;
+
+import chepter3.enumeration.ex2.ClassGrade;
+
+public class DiscountService {
+
+    public int discount(String grade, int price) {
+
+        int discountPercent = 0;
+
+        if (grade.equals("BASIC")) {
+            discountPercent = 10;
+        } else if (grade.equals("GOLD")) {
+            discountPercent = 20;
+        } else if (grade.equals("PLATINUM")) {
+            discountPercent = 30;
+        } else {
+            System.out.println("할인 X");
+        }
+
+        return price - (price * discountPercent / 100);
+    }
+}
