@@ -13,7 +13,7 @@ public class AuthGradeMain2 {
 
 		try {
 
-			 grade = AuthGrade.valueOf(gradeName);
+			 grade = AuthGrade.valueOf(gradeName.toUpperCase());
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("종료");
