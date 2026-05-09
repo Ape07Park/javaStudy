@@ -17,6 +17,7 @@ public class EnumMethodMain {
 
 		System.out.println("======================");
 
+		// String -> Enum , 잘못된 문자면 IligalArgExcetion
 		String input = "GOLD";
 		Grade grade = Grade.valueOf(input);
 		System.out.println("grade = " + grade);
