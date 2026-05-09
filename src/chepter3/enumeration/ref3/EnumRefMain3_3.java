@@ -1,0 +1,20 @@
+package chepter3.enumeration.ref3;
+
+public class EnumRefMain3_3 {
+
+
+    public static void main(String[] args) {
+
+        int price = 10000;
+
+        printDiscount(Grade.BASIC, price);
+        printDiscount(Grade.GOLD, price);
+        printDiscount(Grade.DIAMOND, price);
+
+
+    }
+
+    private static void printDiscount(Grade grade, int price) {
+        System.out.println("등급은 "  + grade.name() + " 할인 가격은 " + grade.discount(price));
+    }
+}
