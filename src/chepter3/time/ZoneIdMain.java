@@ -22,7 +22,10 @@ public class ZoneIdMain {
 
         ZoneId zoneId = ZoneId.systemDefault();
 
-        System.out.println();
+        System.out.println("zoneId = " + zoneId);
+
+        ZoneId seoulZoneId = ZoneId.of("Asia/Seoul");
+        System.out.println("seoulZoneId = " + seoulZoneId);
 
 
     }
