@@ -1,4 +1,4 @@
-package chepter3.nested.ex1;
+package chepter3.nested.nested.ex1;
 
 public class networkMain {
 

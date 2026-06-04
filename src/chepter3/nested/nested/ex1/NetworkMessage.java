@@ -1,4 +1,4 @@
-package chepter3.nested.ex1;
+package chepter3.nested.nested.ex1;
 
 // Network 객체 안에서만 사용
 public class NetworkMessage {
