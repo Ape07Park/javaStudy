@@ -17,7 +17,7 @@ public class Car {
         System.out.println(model + " 시작 완료");
     }
 
-    public class Engine {
+    private class Engine {
 
 
         public void start() {
