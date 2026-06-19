@@ -28,9 +28,7 @@ public class Library {
             return;
         }
 
-        Book book = new Book();
-        book.title = title;
-        book.author = author;
+       Book book = new Book(title, author);
 
         //
         books[bookCount] = book;
@@ -49,10 +47,15 @@ public class Library {
 
 
 
-    public static class Book {
+    private static class Book {
 
         public String title;
         public String author;
+
+        public Book(String title, String author) {
+            this.title = title;
+            this.author = author;
+        }
 
     }
 }
