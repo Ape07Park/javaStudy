@@ -1,0 +1,30 @@
+package chepter4.generic;
+
+import chepter4.generic.animal.Animal;
+import chepter4.generic.animal.Cat;
+import chepter4.generic.animal.Dog;
+import chepter4.generic.ex2.Box;
+
+public class AnimalMain1 {
+
+    public static void main(String[] args) {
+        Animal animal = new Animal("동물", 0);
+        Dog dog = new Dog("멍멍이", 100);
+        Cat cat = new Cat("야옹이", 50);
+
+        Box<Dog> dogBox = new Box<>();
+        dogBox.setValue(dog);
+        Dog findDog = dogBox.getValue();
+        System.out.println("findDog = " + findDog);
+
+        Box<Cat> catBox = new Box<>();
+        catBox.setValue(cat);
+        Cat findCat = catBox.getValue();
+        System.out.println("findCat = " + findCat);
+
+        Box<Animal> animalBox = new Box<>();
+        animalBox.setValue(animal);
+        Animal findAnimal = animalBox.getValue();
+        System.out.println("findAnimal = " + findAnimal);
+    }
+}

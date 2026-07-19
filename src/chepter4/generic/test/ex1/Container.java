@@ -1,18 +1,19 @@
 package chepter4.generic.test.ex1;
 
-public class Container<T> {
+public class Container <T>{
 
-	private T item;
+    private T item;
 
-	public T getItem() {
-		return item;
-	}
+    public T getItem() {
+        return item;
+    }
 
-	public void setItem(T item) {
-		this.item = item;
-	}
+    public void setItem(T item) {
+        this.item = item;
+    }
 
-	public boolean isEmpty() {
-	return item == null;
-	}
+    public boolean isEmpty(){
+        return item == null;
+
+    }
 }
