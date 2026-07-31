@@ -16,5 +16,9 @@ public class MethodMain1 {
 
         Double doubleValue = GenericMethod.<Double>numberMethod(10.5);
         System.out.println("doubleValue = " + doubleValue);
+
+        Integer result1 = GenericMethod.genericMethod(i); // 인자 i 가 Integer라는 걸 통해 T 를 Integer로 추론
+        Integer integerValue1 = GenericMethod.<Integer>numberMethod(10); // 인자 10 가 Integer라는 걸 통해 T 를 Integer로 추론
+        Double doubleValue1 = GenericMethod.<Double>numberMethod(10.5); // // 인자 10.5 가 Double 걸 통해 T 를 Integer로 추론
     }
 }
