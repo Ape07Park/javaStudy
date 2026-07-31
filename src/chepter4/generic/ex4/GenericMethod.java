@@ -1,0 +1,20 @@
+package chepter4.generic.ex4;
+
+public class GenericMethod {
+
+  public static Object getMethod(Object obj) {
+      System.out.println("Object print: " + obj);
+    return obj;
+  }
+
+  // <T> 는 매개변수의 타입, T는 return 타입
+    public static <T> T genericMethod(T obj) {
+        System.out.println("generic print: " + obj);
+        return obj;
+    }
+
+    public static <T extends Number> T numberMethod(T obj) {
+        System.out.println("bound print: " + obj);
+        return obj;
+    }
+}
