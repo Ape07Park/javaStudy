@@ -14,7 +14,7 @@ public class ComplexBox <T extends Animal>{
         this.animal = animal;
     }
 
-
+    // 상한이 안정해져있어서 기본적으로 Object 타입
     public <T> T printAndReturn(T t){
         System.out.println("animal.className: " + animal.getClass().getName());
         System.out.println("t.className: " + t.getClass().getName());
