@@ -14,7 +14,7 @@ public class BatchProcessor {
 
     public void logic(int size) {
         long start = System.currentTimeMillis();
-        for (int i = 0; i < size; i++) { // arrayList: O(n), linkedList: O(1)
+        for (int i = 0; i < size; i++) { // arrayList: O(n), linkedList: O(n)
             list.add(0, i); // 앞에 추가. arrayList: O(n), linkedList: O(1)
         }
 
