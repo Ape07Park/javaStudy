@@ -1,4 +1,4 @@
-package chepter4.collection.list.test;
+package chepter4.collection.list.test.ex1;
 
 import java.util.ArrayList;
 import java.util.List;
