@@ -27,11 +27,8 @@ public class ListEx3 {
         System.out.println("sum = " + sum);
         double average = average(list);
         System.out.println("average = " + average);
-        
-
 
         scanner.close();
-
     }
 
 
