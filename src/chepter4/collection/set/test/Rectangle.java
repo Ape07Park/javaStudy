@@ -23,6 +23,8 @@ public class Rectangle {
 
     @Override
     public boolean equals(Object o) {
+        System.out.println("Rectangle.equals");
+        System.out.println("o = " + o);
         if (o == null || getClass() != o.getClass())
             return false;
         Rectangle rectangle = (Rectangle)o;
