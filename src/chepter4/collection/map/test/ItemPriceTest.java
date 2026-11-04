@@ -16,24 +16,32 @@ public class ItemPriceTest {
         map.put("망고", 1000);
         map.put("딸기", 1000);
 
+        List<String> list = new ArrayList<>();
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue().equals(1000)) {
+
+                list.add(entry.getKey());
+            }
+        }
+
+        System.out.println(list);
+
         // 코드 작성
 
-        int price = 1000;
+        // int price = 1000;
+        //
+        // Set<String> keys = map.keySet();
+        // List<String> names = new ArrayList<>();
+        //
+        // keys.forEach(key -> {
+        //     int value = map.get(key);
+        //
+        //     if (value == price) {
+        //         names.add(key);
+        //
+        //     }
+        // });
 
-       Set<String> keys = map.keySet();
-       List<String> names = new ArrayList<>();
-
-       keys.forEach(key -> {
-           int value = map.get(key);
-
-           if (value == price) {
-                names.add(key);
-
-           }
-       });
-
-        System.out.println(names);
-
-
+        // System.out.println(names);
     }
 }

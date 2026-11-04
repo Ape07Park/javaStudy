@@ -7,10 +7,8 @@ import java.util.Set;
 public class CommonKeyValueSum1 {
 
     public static void main(String[] args) {
-        Map<String, Integer> map1 = new HashMap<>();
-        map1.put("A", 1);
-        map1.put("B", 2);
-        map1.put("C", 3);
+        Map<String, Integer> map1 = Map.of("A", 1, "B", 2, "C" , 3);
+
 
         Map<String, Integer> map2 = new HashMap<>();
         map2.put("B", 4);
