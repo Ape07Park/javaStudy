@@ -29,7 +29,6 @@ public class MyUser implements Comparable<MyUser> {
     // 비교(정렬) 기준 정의
     @Override
     public int compareTo(MyUser o) {
-        System.out.println(this + " vs " + o);
         return this.age < o.age ? -1 : (this.age == o.age ? 0 : 1);
 
     }
