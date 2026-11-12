@@ -1,4 +1,4 @@
-package chepter4.collection.deque.test;
+package chepter4.collection.deque.test.stack;
 
 public class BrowserHistoryTest {
 
