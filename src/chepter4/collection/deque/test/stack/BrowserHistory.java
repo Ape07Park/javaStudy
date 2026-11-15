@@ -5,20 +5,27 @@ import java.util.Deque;
 
 public class BrowserHistory {
 
-    private Deque<String> stack = new ArrayDeque<>();
+    private Deque<String> history = new ArrayDeque<>();
+    private String currentPage = null;
 
-    public void visitPage (String webPage) {
-        System.out.println("방문: " + webPage);
-        stack.push(webPage);
+    public void visitPage(String url) {
+        if (currentPage != null) {
+            history.push(currentPage);
+        }
+        currentPage = url;
+        System.out.println("방문: " + url);
+
     }
 
-    public String goBack () {
+    public String goBack() {
 
-        stack.pop();
+        if (!history.isEmpty()) {
+            currentPage = history.pop();
+            System.out.println("뒤로가기: " + currentPage);
+            return currentPage;
+        }
 
-        System.out.println("뒤로가기: " + stack.getFirst());
-
-        return stack.getFirst();
+        return null;
     }
 
 }

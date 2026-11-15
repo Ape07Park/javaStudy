@@ -1,4 +1,4 @@
-package chepter4.collection.deque.test;
+package chepter4.collection.deque.test.queue;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

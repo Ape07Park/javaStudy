@@ -1,4 +1,4 @@
-package chepter4.collection.deque.test;
+package chepter4.collection.deque.test.queue;
 
 public interface Task {
     void execute();
