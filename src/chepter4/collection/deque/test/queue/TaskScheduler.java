@@ -9,7 +9,7 @@ public class TaskScheduler {
     // 코드 작성
 
     public void addTask(Task task) {
-        tasks.add(task);
+        tasks.offer(task);
     }
 
     public int getRemainingTasks() {
@@ -19,12 +19,13 @@ public class TaskScheduler {
 
     public void processNextTask() {
 
-        Task task = tasks.element();
+        Task task = tasks.poll();
 
-        // System.out.println(task.execute());
+        if (task != null) {
 
-        tasks.remove();
+            task.execute();
+        }
+
     }
-
 
 }
